@@ -19,6 +19,8 @@ body{
 
 .wrapper{
     padding-top: 10vw;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .logo-cont{
@@ -237,10 +239,10 @@ h3~p{
     width: 18%;
 }
 
-.icon-facebook, .icon-twitter, .icon-instagram {
+/* .icon-facebook, .icon-twitter, .icon-instagram {
     width: 100%;
     height: auto;
-}
+} */
 
 .footer-items{
     display: flex;
@@ -277,6 +279,15 @@ footer a{
     .Download-ios{
        margin-right: 3vw;
     }
+
+    .social-media{
+      width:22%;
+    }
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
 }
 
 @media(max-width: 800px){
@@ -301,7 +312,8 @@ footer a{
 
     h3 {
     margin-top: 3.7vw;
-    margin-bottom: 0.9vw;}
+    margin-bottom: 0.9vw;
+    }
 }
 
 @media(max-width: 700px){
@@ -543,15 +555,21 @@ footer a{
     .Download-ios:hover, .Download-Mac:hover{
         transform: scale(1.4);
     }
-    
 
-    
+    svg{
+      width: 27px;
+      height: 27px;
+    }
 
-    
-    
+}
 
-    
+@media(max-width:425px){
+  .social-media{
+    width: 50%;
+}
 
-
-
+svg{
+  width: 24px;
+  height: 24px;
+}
 }
